@@ -25,8 +25,31 @@ pipeline {
     }
 
     stage('M') {
+      parallel {
+        stage('M') {
+          steps {
+            echo 'b'
+          }
+        }
+
+        stage('a') {
+          steps {
+            echo 'h'
+          }
+        }
+
+        stage('k') {
+          steps {
+            echo 'k'
+          }
+        }
+
+      }
+    }
+
+    stage('m') {
       steps {
-        echo 'b'
+        echo 'l'
       }
     }
 
