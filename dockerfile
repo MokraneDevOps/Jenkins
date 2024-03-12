@@ -1,5 +1,5 @@
 FROM python:3-alpine
 
-COPY helloworld.py /
+COPY hellowordld.py /
 
 ENTRYPOINT ["python", "hellowordld.py"]
