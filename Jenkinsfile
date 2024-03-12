@@ -18,5 +18,17 @@ pipeline {
       }
     }
 
+    stage('TEST') {
+      steps {
+        echo 'BONJOUR'
+      }
+    }
+
+    stage('M') {
+      steps {
+        echo 'b'
+      }
+    }
+
   }
 }
