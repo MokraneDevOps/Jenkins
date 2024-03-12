@@ -18,5 +18,11 @@ pipeline {
       }
     }
 
+    stage('message ') {
+      steps {
+        echo 'helle world!'
+      }
+    }
+
   }
 }
